@@ -1,0 +1,13 @@
+jobs:
+- name: u14ruball-test
+  type: runSh
+  runtime:
+    container: true
+  steps:
+    - TASK:
+        runtime:
+          options:
+            imageName: "drydock/u14ruball"
+            imageTag: master
+        script:
+         - rvm list
