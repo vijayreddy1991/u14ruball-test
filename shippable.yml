@@ -10,4 +10,6 @@ jobs:
             imageName: "drydock/u14ruball"
             imageTag: master
         script:
+         - source /etc/profile.d/rvm.sh
          - rvm list
+         - ruby --version
